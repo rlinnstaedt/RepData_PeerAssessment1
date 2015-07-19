@@ -4,6 +4,7 @@ Reproducible Research Peer Assessment 1
 Read in the data and transform the date to correct format:
 ```{r}
 library(lattice)
+library(knitr)
 activityData <- read.csv("activity.csv", header=TRUE)
 activityData$date <- as.Date(activityData$date, "%Y-%m-%d")
 ```
